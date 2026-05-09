@@ -1,5 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
-# Run this after restoring from Termux Backup & Restore to verify all components came back.
+# Verification script — run after restoring from backup + running setup-native-termux.sh
+#
+# Restore command (run first, in fresh Termux):
+#   termux-setup-storage
+#   termux-restore /storage/emulated/0/Download/APKs/termux-backup.tar.gz
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
