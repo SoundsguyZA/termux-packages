@@ -31,7 +31,7 @@ CLAUDE_VER=$(claude --version 2>/dev/null | head -1)
 if [ -n "$CLAUDE_VER" ]; then
   pass "Claude Code: $CLAUDE_VER"
 else
-  fail "Claude Code: not found — run: npm install -g @anthropic-ai/claude-code"
+  fail "Claude Code: not found — in proot Ubuntu: npm install -g @anthropic-ai/claude-code"
 fi
 
 # Claude Code skills (veritas-motherlode + others)

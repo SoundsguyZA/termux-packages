@@ -128,9 +128,10 @@ fi
 # Pull starter model
 echo ""
 echo "  Recommended models (CPU-only, Pura 80 Pro):"
-echo "    tinyllama  ~637MB   fastest"
-echo "    phi3:mini  ~2.2GB   balanced"
-echo "    llama3.2:3b ~2GB    best quality"
+echo "    tinyllama   ~637MB   fastest (fallback only)"
+echo "    phi3:mini   ~2.2GB   balanced"
+echo "    llama3.2:3b ~2GB    good quality"
+echo "    gemma4:e4b  ~3-4GB  RECOMMENDED — 4.5B active, 128K ctx, vision+audio"
 echo ""
 read -p "  Pull a model now? Enter name or press Enter to skip: " MODEL_CHOICE
 if [ -n "$MODEL_CHOICE" ]; then
